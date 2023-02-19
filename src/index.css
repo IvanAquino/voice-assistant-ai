@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-slate-100;
+}
+
+a {
+    @apply text-blue-600 underline;
+}
+
+.microphone-button {
+    @apply text-white bg-blue-600 shadow-lg shadow-blue-500/90;
+}
+
+.microphone-button-active {
+    @apply text-white bg-orange-500 shadow-lg shadow-orange-500/90;
+}
