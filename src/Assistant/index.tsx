@@ -49,7 +49,7 @@ export default function() {
 
             <input
               type="password"
-              className="w-full px-4 py-2 mt-4 text-gray-700 bg-white border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 mt-4 text-gray-700 dark:text-white bg-white border border-gray-300 dark:bg-slate-800 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
               placeholder="OpenAI key"
               value={openAIKey}
               onChange={(e) => setOpenAIKey(e.target.value)}
@@ -59,7 +59,7 @@ export default function() {
             </small></p>
 
             <select
-              className="w-full px-4 py-2 mt-4 text-gray-700 bg-white border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 mt-4 text-gray-700 dark:text-white bg-whit dark:bg-slate-800 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
               value={languaje}
               onChange={(e) => setLanguaje(e.target.value)}
             >
@@ -71,7 +71,7 @@ export default function() {
             </select>
 
             <textarea
-              className="w-full px-4 py-2 mt-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 mt-4 text-gray-700 dark:text-white bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline"
               value={transcript}
               disabled
               readOnly
@@ -116,7 +116,7 @@ export default function() {
               }
               onChange={(e) => e.preventDefault()}
               className={
-                `h-full w-full px-4 py-2 mt-4 text-gray-700 bg-gray-100 rounded-lg border ${workingOnCompletion ? ' border-orange-500' : ' border-red-300'}}`
+                `h-full w-full px-4 py-2 mt-4 text-gray-700 dark:text-white bg-gray-100 dark:bg-slate-800 rounded-lg border ${workingOnCompletion ? ' border-orange-500' : ' border-red-300'}}`
               }
               placeholder='Your assistant will appear here'
             ></textarea>
